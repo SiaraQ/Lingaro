@@ -77,7 +77,6 @@ public class SeleniumMachine {
 	 	  int itterator= 0;
 	  while (true) {
 		 Thread.sleep(75);
-		 //findDynamicElement(By.xpath(".//*[@id='isc_PickListMenu_0_row_"+itterator+"']/td[1]/div"),10);
 		 Boolean firstRow = isElementPresent(By.xpath(".//*[@id='isc_PickListMenu_0_row_"+itterator+"']/td[1]/div[contains(text(),'Exercise')]"));
 		 Boolean secondRow =isElementPresent(By.xpath(".//*[@id='isc_PickListMenu_0_row_"+itterator+"']/td[2]/div[contains(text(),'Ea')]"));
 		 
